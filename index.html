@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetics Quiz - Test Your Knowledge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="quiz-header">
+            <div class="score-box">
+                <span>Score</span>
+                <span id="score">0</span>
+            </div>
+            <div class="progress" data-progress="0%">
+                <div id="progress-bar"></div>
+            </div>
+        </header>
+
+        <main id="quiz-container"></main>
+
+        <div id="results" class="hidden">
+            <h2>Quiz Complete! 🎓</h2>
+            <p>Your final score: <span id="final-score">0</span></p>
+            <button onclick="location.reload()">Try Again</button>
+        </div>
+
+        <div id="error" class="hidden">⚠️ Error loading quiz. Please try again later.</div>
+        <div id="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading Challenge...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
